@@ -219,7 +219,7 @@ class PPRFCN(PPRFCN_utils):
         super().__init__()
 
         self.c = num_classes
-        weights = models.video.R3D_18_Weights.KINETICS400_V1 if pretrained else None
+        weights = models.R3D_18_Weights.KINETICS400_V1 if pretrained else None
         model = models.__dict__['r3d_18'](weights=weights)
         self.backbone = nn.Sequential(
                 *list(model.children())[:-2],

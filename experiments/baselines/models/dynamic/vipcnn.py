@@ -90,7 +90,7 @@ class VipCNN(VipCNN_utils):
         # weights = models.ResNet18_Weights.DEFAULT if imagenet_pretrained else None
         # model = models.__dict__['resnet18'](weights=weights)
 
-        weights = models.video.R3D_18_Weights.KINETICS400_V1 if pretrained else None
+        weights = models.R3D_18_Weights.KINETICS400_V1 if pretrained else None
         model = models.__dict__['r3d_18'](weights=weights)
 
 

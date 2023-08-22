@@ -116,7 +116,7 @@ class DRNet(nn.Module):
         self.n_frames = n_frames
 
 
-        weights = models.video.R3D_18_Weights.KINETICS400_V1 if pretrained else None
+        weights = models.R3D_18_Weights.KINETICS400_V1 if pretrained else None
         self.appr_module = models.__dict__['r3d_18'](weights=weights)
 
 
