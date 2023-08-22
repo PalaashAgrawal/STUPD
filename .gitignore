@@ -1,0 +1,15 @@
+__pycache__/
+
+wandb/
+
+.ipynb_checkpoints/
+
+*.bin.gz
+
+*pkl.pth
+
+*.out
+
+/experiments/old/
+
+/experiments/baselines/models/encoder/

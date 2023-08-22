@@ -1,0 +1,1433 @@
+{
+  "version": "0.0.1",
+  "captures": [
+    {
+      "id": "bb7f1dc3-70e8-4b06-993a-77e00f1c0f0f",
+      "sequence_id": "7b5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          6.56844425,
+          -6.67999363,
+          -3.49760175
+        ],
+        "rotation": [
+          -0.306628257,
+          -0.480727553,
+          -0.18411465,
+          0.800613463
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_2.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 3,
+              "label_name": "Cylinder",
+              "instance_id": 1,
+              "translation": {
+                "x": 0.773249865,
+                "y": 1.97190022,
+                "z": 11.897912
+              },
+              "size": {
+                "x": 1.00000012,
+                "y": 1.99999988,
+                "z": 1.00000012
+              },
+              "rotation": {
+                "x": 0.18684119,
+                "y": -0.391466379,
+                "z": -0.462707549,
+                "w": 0.77314043
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            {
+              "label_id": 4,
+              "label_name": "Capsule",
+              "instance_id": 2,
+              "translation": {
+                "x": 0.773250043,
+                "y": -2.09898853,
+                "z": 8.243665
+              },
+              "size": {
+                "x": 1.00000024,
+                "y": 2.00000024,
+                "z": 1.00000012
+              },
+              "rotation": {
+                "x": 0.139969915,
+                "y": -0.327581465,
+                "z": 0.5079802,
+                "w": 0.7842544
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 3,
+              "label_name": "Cylinder",
+              "instance_id": 1,
+              "x": 250.0,
+              "y": 177.0,
+              "width": 53.0,
+              "height": 49.0
+            },
+            {
+              "label_id": 4,
+              "label_name": "Capsule",
+              "instance_id": 2,
+              "x": 249.0,
+              "y": 312.0,
+              "width": 76.0,
+              "height": 58.0
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_2.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            },
+            {
+              "instance_id": 2,
+              "color": {
+                "r": 0,
+                "g": 74,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_2.png"
+        }
+      ]
+    },
+    {
+      "id": "1671d214-b4b8-47e0-b758-c44abbfd9107",
+      "sequence_id": "7c5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -4.885283,
+          5.14703846,
+          -7.0457077
+        ],
+        "rotation": [
+          0.2548748,
+          0.287669063,
+          -0.0797173,
+          0.919744849
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_3.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 2,
+              "label_name": "Cone",
+              "instance_id": 1,
+              "x": 263.0,
+              "y": 275.0,
+              "width": 22.0,
+              "height": 29.0
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_3.png"
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 2,
+              "label_name": "Cone",
+              "instance_id": 1,
+              "translation": {
+                "x": 0.471989721,
+                "y": -1.38446748,
+                "z": 12.5613365
+              },
+              "size": {
+                "x": 1.00000012,
+                "y": 1.00000012,
+                "z": 1.0
+              },
+              "rotation": {
+                "x": -0.952745736,
+                "y": 0.199521273,
+                "z": 0.197990611,
+                "w": 0.115180768
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_3.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0eef54e0-0cac-4e93-94ef-d3d7ec0aba0a",
+      "sequence_id": "7d5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -3.58030558,
+          5.75758743,
+          -7.350619
+        ],
+        "rotation": [
+          0.294255465,
+          0.214202613,
+          -0.0678519458,
+          0.9289387
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_4.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_4.png"
+        },
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 4,
+              "label_name": "Capsule",
+              "instance_id": 1,
+              "x": 253.0,
+              "y": 309.0,
+              "width": 42.0,
+              "height": 28.0
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_4.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 4,
+              "label_name": "Capsule",
+              "instance_id": 1,
+              "translation": {
+                "x": 0.76166296,
+                "y": -2.73260975,
+                "z": 13.5663433
+              },
+              "size": {
+                "x": 1.00000012,
+                "y": 2.00000048,
+                "z": 1.00000048
+              },
+              "rotation": {
+                "x": -0.7602142,
+                "y": -0.551769257,
+                "z": -0.170774341,
+                "w": -0.2974244
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fb9a4933-8fac-4aa9-8792-f7c47a169d35",
+      "sequence_id": "7e5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -6.78593445,
+          7.34491634,
+          -0.05732417
+        ],
+        "rotation": [
+          0.284647644,
+          0.645065546,
+          -0.282253236,
+          0.6505377
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_5.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 5,
+              "label_name": "Torus",
+              "instance_id": 1,
+              "translation": {
+                "x": -1.1123898,
+                "y": -1.7697202,
+                "z": 11.9309349
+              },
+              "size": {
+                "x": 2.00000024,
+                "y": 0.6000001,
+                "z": 2.0
+              },
+              "rotation": {
+                "x": -0.5590692,
+                "y": 0.107253514,
+                "z": 0.239217937,
+                "w": 0.786583245
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 5,
+              "label_name": "Torus",
+              "instance_id": 1,
+              "x": 201.0,
+              "y": 278.0,
+              "width": 49.0,
+              "height": 56.0
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_5.png"
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_5.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbe21bcf-3fea-4fc4-b73b-1d3ab7c45448",
+      "sequence_id": "7f5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -5.18164825,
+          6.376088,
+          5.70052862
+        ],
+        "rotation": [
+          0.122178592,
+          0.877552748,
+          -0.316057354,
+          0.3392364
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_6.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 5,
+              "label_name": "Torus",
+              "instance_id": 1,
+              "x": 237.0,
+              "y": 300.0,
+              "width": 26.0,
+              "height": 56.0
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_6.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 5,
+              "label_name": "Torus",
+              "instance_id": 1,
+              "translation": {
+                "x": -0.198968574,
+                "y": -2.56346941,
+                "z": 11.9621849
+              },
+              "size": {
+                "x": 2.00000024,
+                "y": 0.600000143,
+                "z": 2.0
+              },
+              "rotation": {
+                "x": 0.400246829,
+                "y": -0.3364575,
+                "z": 0.5221036,
+                "w": 0.6738003
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_6.png"
+        }
+      ]
+    },
+    {
+      "id": "ad0d5cd3-7533-4cd4-8820-84c094f63ee6",
+      "sequence_id": "805c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -6.967224,
+          -2.79086161,
+          6.608243
+        ],
+        "rotation": [
+          -0.0556558967,
+          0.909568369,
+          0.129496679,
+          0.39092
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_7.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 6,
+              "label_name": "Cube",
+              "instance_id": 1,
+              "x": 198.0,
+              "y": 337.0,
+              "width": 43.0,
+              "height": 53.0
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_7.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_7.png"
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 6,
+              "label_name": "Cube",
+              "instance_id": 1,
+              "translation": {
+                "x": -1.06289971,
+                "y": -3.179839,
+                "z": 9.98971
+              },
+              "size": {
+                "x": 1.00000048,
+                "y": 1.0,
+                "z": 1.00000024
+              },
+              "rotation": {
+                "x": 0.5827167,
+                "y": 0.0573260523,
+                "z": -0.08351336,
+                "w": 0.8063378
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7853909c-51d4-4e58-aca9-0360caeb8ea1",
+      "sequence_id": "815c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          5.18569946,
+          -6.99949932,
+          -4.910756
+        ],
+        "rotation": [
+          -0.347249448,
+          -0.365896225,
+          -0.149405122,
+          0.8504211
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_8.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 6,
+              "label_name": "Cube",
+              "instance_id": 1,
+              "x": 258.0,
+              "y": 375.0,
+              "width": 80.0,
+              "height": 91.0
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_8.png"
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 6,
+              "label_name": "Cube",
+              "instance_id": 1,
+              "translation": {
+                "x": 0.8480415,
+                "y": -3.18530965,
+                "z": 6.547897
+              },
+              "size": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.99999994
+              },
+              "rotation": {
+                "x": 0.8491493,
+                "y": 0.283739775,
+                "z": 0.4074794,
+                "w": 0.179994017
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_8.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ff06ba3-29f9-4c3a-b9a6-8722bf6442b8",
+      "sequence_id": "825c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          0.119765714,
+          7.237807,
+          6.89926147
+        ],
+        "rotation": [
+          -0.00341661181,
+          0.9192124,
+          -0.393666446,
+          -0.007977799
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_9.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 3,
+              "label_name": "Cylinder",
+              "instance_id": 1,
+              "x": 144.0,
+              "y": 154.0,
+              "width": 97.0,
+              "height": 62.0
+            },
+            {
+              "label_id": 2,
+              "label_name": "Cone",
+              "instance_id": 2,
+              "x": 203.0,
+              "y": 311.0,
+              "width": 31.0,
+              "height": 27.0
+            }
+          ]
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 3,
+              "label_name": "Cylinder",
+              "instance_id": 1,
+              "translation": {
+                "x": -1.46241093,
+                "y": 1.59815228,
+                "z": 7.69954967
+              },
+              "size": {
+                "x": 1.00000036,
+                "y": 2.00000024,
+                "z": 1.00000036
+              },
+              "rotation": {
+                "x": 0.465663522,
+                "y": -0.271657854,
+                "z": -0.471193463,
+                "w": -0.6980948
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            {
+              "label_id": 2,
+              "label_name": "Cone",
+              "instance_id": 2,
+              "translation": {
+                "x": -1.46241093,
+                "y": -2.22157168,
+                "z": 11.7061033
+              },
+              "size": {
+                "x": 1.00000012,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "rotation": {
+                "x": 0.5065933,
+                "y": -0.805564761,
+                "z": 0.10508436,
+                "w": -0.2887663
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_9.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            },
+            {
+              "instance_id": 2,
+              "color": {
+                "r": 0,
+                "g": 74,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_9.png"
+        }
+      ]
+    },
+    {
+      "id": "60699200-3943-4533-8c88-cb3f3fe4b4da",
+      "sequence_id": "835c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -0.9807501,
+          6.650573,
+          -7.40324259
+        ],
+        "rotation": [
+          0.355043054,
+          0.06150021,
+          -0.0234150123,
+          0.93253094
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_10.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_10.png"
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 1,
+              "label_name": "Pipe",
+              "instance_id": 1,
+              "translation": {
+                "x": 0.489552736,
+                "y": -3.04276514,
+                "z": 13.8851643
+              },
+              "size": {
+                "x": 2.0,
+                "y": 2.0,
+                "z": 2.00000024
+              },
+              "rotation": {
+                "x": 0.320976019,
+                "y": 0.486258656,
+                "z": 0.579333246,
+                "w": 0.57
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_10.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 1,
+              "label_name": "Pipe",
+              "instance_id": 1,
+              "x": 238.0,
+              "y": 300.0,
+              "width": 62.0,
+              "height": 61.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "055ceeb5-658f-4ec5-b3d1-52ac9aad0430",
+      "sequence_id": "845c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "timestamp": 0.0,
+      "sensor": {
+        "sensor_id": "camera",
+        "ego_id": "ego",
+        "modality": "camera",
+        "translation": [
+          -7.107977,
+          1.73149228,
+          6.817522
+        ],
+        "rotation": [
+          0.0340918638,
+          0.916359067,
+          -0.07993714,
+          0.39081195
+        ],
+        "camera_intrinsic": [
+          [
+            1.30322528,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.30322528,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0006001
+          ]
+        ],
+        "projection": "perspective"
+      },
+      "ego": {
+        "ego_id": "ego",
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": null,
+        "acceleration": null
+      },
+      "filename": "RGBf872382b-4d91-4e35-90d8-d010951498b9/rgb_11.png",
+      "format": "PNG",
+      "annotations": [
+        {
+          "id": "bounding box",
+          "annotation_definition": "bounding box",
+          "values": [
+            {
+              "label_id": 8,
+              "label_name": "Prism",
+              "instance_id": 1,
+              "x": 192.0,
+              "y": 348.0,
+              "width": 37.0,
+              "height": 33.0
+            }
+          ]
+        },
+        {
+          "id": "semantic segmentation",
+          "annotation_definition": "semantic segmentation",
+          "filename": "SemanticSegmentation519ec962-2aee-45f9-9878-8302590ebb52/segmentation_11.png"
+        },
+        {
+          "id": "instance segmentation",
+          "annotation_definition": "instance segmentation",
+          "filename": "InstanceSegmentationa0f5f44e-59b9-40b9-9c4d-b550bd79932c/Instance_11.png",
+          "values": [
+            {
+              "instance_id": 1,
+              "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ]
+        },
+        {
+          "id": "bounding box 3D",
+          "annotation_definition": "bounding box 3D",
+          "values": [
+            {
+              "label_id": 8,
+              "label_name": "Prism",
+              "instance_id": 1,
+              "translation": {
+                "x": -1.40160906,
+                "y": -3.665328,
+                "z": 10.6151943
+              },
+              "size": {
+                "x": 1.0,
+                "y": 1.00000048,
+                "z": 1.00000036
+              },
+              "rotation": {
+                "x": -0.6840046,
+                "y": -0.203349262,
+                "z": -0.67237103,
+                "w": -0.196733832
+              },
+              "velocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "acceleration": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

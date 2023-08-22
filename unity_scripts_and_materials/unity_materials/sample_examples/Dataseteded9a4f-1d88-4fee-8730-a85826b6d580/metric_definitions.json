@@ -1,0 +1,133 @@
+{
+  "version": "0.0.1",
+  "metric_definitions": [
+    {
+      "id": "RenderedObjectInfo",
+      "name": "RenderedObjectInfo",
+      "description": "Produces label id, instance id, and visible pixel count in a single metric each frame for each object which takes up one or more pixels in the camera's frame, based on this labeler's associated label configuration.",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe"
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone"
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder"
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule"
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus"
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube"
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere"
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism"
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch"
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container"
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe"
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container"
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container"
+        }
+      ]
+    },
+    {
+      "id": "ObjectCount",
+      "name": "ObjectCount",
+      "description": "Produces object counts for each label defined in this labeler's associated label configuration.",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe"
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone"
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder"
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule"
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus"
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube"
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere"
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism"
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch"
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container"
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe"
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container"
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container"
+        }
+      ]
+    },
+    {
+      "id": "scenario_iteration",
+      "name": "scenario_iteration",
+      "description": "Iteration information for dataset sequences"
+    },
+    {
+      "id": "random-seed",
+      "name": "random-seed",
+      "description": "The random seed used to initialize the random state of the simulation. Only triggered once per simulation."
+    }
+  ]
+}

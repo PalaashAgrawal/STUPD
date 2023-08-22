@@ -1,0 +1,310 @@
+{
+  "version": "0.0.1",
+  "annotation_definitions": [
+    {
+      "id": "bounding box",
+      "name": "bounding box",
+      "description": "Produces 2D bounding box annotations for all visible objects that bear a label defined in this labeler's associated label configuration.",
+      "format": "json",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe"
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone"
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder"
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule"
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus"
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube"
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere"
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism"
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch"
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container"
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe"
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container"
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container"
+        }
+      ]
+    },
+    {
+      "id": "bounding box 3D",
+      "name": "bounding box 3D",
+      "description": "Produces 3D bounding box ground truth data for all visible objects that bear a label defined in this labeler's associated label configuration.",
+      "format": "json",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe"
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone"
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder"
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule"
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus"
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube"
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere"
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism"
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch"
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container"
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe"
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container"
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container"
+        }
+      ]
+    },
+    {
+      "id": "instance segmentation",
+      "name": "instance segmentation",
+      "description": "Produces an instance segmentation image for each frame. The image will render the pixels of each labeled object in a distinct color.",
+      "format": "PNG",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe"
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone"
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder"
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule"
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus"
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube"
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere"
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism"
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch"
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container"
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe"
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container"
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container"
+        }
+      ]
+    },
+    {
+      "id": "semantic segmentation",
+      "name": "semantic segmentation",
+      "description": "Generates a semantic segmentation image for each captured frame. Each object is rendered to the semantic segmentation image using the color associated with it based on this labeler's associated semantic segmentation label configuration. Semantic segmentation images are saved to the dataset in PNG format. Please note that only one SemanticSegmentationLabeler can render at once across all cameras.",
+      "format": "PNG",
+      "spec": [
+        {
+          "label_name": "Pipe",
+          "pixel_value": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Cone",
+          "pixel_value": {
+            "r": 0.0,
+            "g": 1.0,
+            "b": 0.0,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Cylinder",
+          "pixel_value": {
+            "r": 1.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Capsule",
+          "pixel_value": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Torus",
+          "pixel_value": {
+            "r": 1.0,
+            "g": 0.921568632,
+            "b": 0.0156862754,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Cube",
+          "pixel_value": {
+            "r": 0.5,
+            "g": 0.5,
+            "b": 0.5,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Sphere",
+          "pixel_value": {
+            "r": 0.253874063,
+            "g": 1.0,
+            "b": 0.930478,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Prism",
+          "pixel_value": {
+            "r": 1.0,
+            "g": 0.2770859,
+            "b": 0.369210958,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Arch",
+          "pixel_value": {
+            "r": 1.0,
+            "g": 0.200135827,
+            "b": 0.43141523,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Circular_container",
+          "pixel_value": {
+            "r": 0.6396987,
+            "g": 1.0,
+            "b": 0.456282735,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Octagonal_pipe",
+          "pixel_value": {
+            "r": 0.263732553,
+            "g": 1.0,
+            "b": 0.6430766,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Square_container",
+          "pixel_value": {
+            "r": 0.998957634,
+            "g": 1.0,
+            "b": 0.4322539,
+            "a": 1.0
+          }
+        },
+        {
+          "label_name": "Torus_container",
+          "pixel_value": {
+            "r": 0.230831146,
+            "g": 1.0,
+            "b": 0.9957444,
+            "a": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

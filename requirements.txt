@@ -1,0 +1,6 @@
+torch
+torchvision
+accelerate
+wandb
+pathlib
+fastai

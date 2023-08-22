@@ -1,0 +1,1167 @@
+{
+  "version": "0.0.1",
+  "metrics": [
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7b5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        0
+      ]
+    },
+    {
+      "capture_id": "bb7f1dc3-70e8-4b06-993a-77e00f1c0f0f",
+      "annotation_id": null,
+      "sequence_id": "7b5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 2,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 1507
+        },
+        {
+          "label_id": 4,
+          "instance_id": 2,
+          "instance_color": {
+            "r": 0,
+            "g": 74,
+            "b": 255,
+            "a": 255
+          },
+          "visible_pixels": 2951
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7b5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "bb7f1dc3-70e8-4b06-993a-77e00f1c0f0f",
+      "annotation_id": null,
+      "sequence_id": "7b5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 1
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7c5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        1
+      ]
+    },
+    {
+      "capture_id": "1671d214-b4b8-47e0-b758-c44abbfd9107",
+      "annotation_id": null,
+      "sequence_id": "7c5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 4,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 351
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7c5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "1671d214-b4b8-47e0-b758-c44abbfd9107",
+      "annotation_id": null,
+      "sequence_id": "7c5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 1
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7d5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        2
+      ]
+    },
+    {
+      "capture_id": "0eef54e0-0cac-4e93-94ef-d3d7ec0aba0a",
+      "annotation_id": null,
+      "sequence_id": "7d5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 5,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 917
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7d5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "0eef54e0-0cac-4e93-94ef-d3d7ec0aba0a",
+      "annotation_id": null,
+      "sequence_id": "7d5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 1
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7e5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        3
+      ]
+    },
+    {
+      "capture_id": "fb9a4933-8fac-4aa9-8792-f7c47a169d35",
+      "annotation_id": null,
+      "sequence_id": "7e5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 5,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 1843
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7e5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "fb9a4933-8fac-4aa9-8792-f7c47a169d35",
+      "annotation_id": null,
+      "sequence_id": "7e5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 1
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7f5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        4
+      ]
+    },
+    {
+      "capture_id": "bbe21bcf-3fea-4fc4-b73b-1d3ab7c45448",
+      "annotation_id": null,
+      "sequence_id": "7f5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 6,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 1108
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "7f5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "bbe21bcf-3fea-4fc4-b73b-1d3ab7c45448",
+      "annotation_id": null,
+      "sequence_id": "7f5c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 1
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "805c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        5
+      ]
+    },
+    {
+      "capture_id": "ad0d5cd3-7533-4cd4-8820-84c094f63ee6",
+      "annotation_id": null,
+      "sequence_id": "805c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 3,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 1912
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "805c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "ad0d5cd3-7533-4cd4-8820-84c094f63ee6",
+      "annotation_id": null,
+      "sequence_id": "805c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 1
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 0
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "815c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        6
+      ]
+    },
+    {
+      "capture_id": "7853909c-51d4-4e58-aca9-0360caeb8ea1",
+      "annotation_id": null,
+      "sequence_id": "815c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 1,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 4612
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "815c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "7853909c-51d4-4e58-aca9-0360caeb8ea1",
+      "annotation_id": null,
+      "sequence_id": "815c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 1
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "825c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        7
+      ]
+    },
+    {
+      "capture_id": "3ff06ba3-29f9-4c3a-b9a6-8722bf6442b8",
+      "annotation_id": null,
+      "sequence_id": "825c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 8,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 4123
+        },
+        {
+          "label_id": 2,
+          "instance_id": 2,
+          "instance_color": {
+            "r": 0,
+            "g": 74,
+            "b": 255,
+            "a": 255
+          },
+          "visible_pixels": 499
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "825c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "3ff06ba3-29f9-4c3a-b9a6-8722bf6442b8",
+      "annotation_id": null,
+      "sequence_id": "825c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 1
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "835c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        8
+      ]
+    },
+    {
+      "capture_id": "60699200-3943-4533-8c88-cb3f3fe4b4da",
+      "annotation_id": null,
+      "sequence_id": "835c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 8,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 2553
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "835c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "60699200-3943-4533-8c88-cb3f3fe4b4da",
+      "annotation_id": null,
+      "sequence_id": "835c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 1
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "845c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "scenario_iteration",
+      "values": [
+        9
+      ]
+    },
+    {
+      "capture_id": "055ceeb5-658f-4ec5-b3d1-52ac9aad0430",
+      "annotation_id": null,
+      "sequence_id": "845c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "RenderedObjectInfo",
+      "values": [
+        {
+          "label_id": 8,
+          "instance_id": 1,
+          "instance_color": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          },
+          "visible_pixels": 1109
+        }
+      ]
+    },
+    {
+      "capture_id": null,
+      "annotation_id": null,
+      "sequence_id": "845c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "random-seed",
+      "values": [
+        539662031
+      ]
+    },
+    {
+      "capture_id": "055ceeb5-658f-4ec5-b3d1-52ac9aad0430",
+      "annotation_id": null,
+      "sequence_id": "845c636d-d9e3-44b5-800b-7e7bfe8df57b",
+      "step": 0,
+      "metric_definition": "ObjectCount",
+      "values": [
+        {
+          "label_id": 1,
+          "label_name": "Pipe",
+          "count": 0
+        },
+        {
+          "label_id": 2,
+          "label_name": "Cone",
+          "count": 0
+        },
+        {
+          "label_id": 3,
+          "label_name": "Cylinder",
+          "count": 0
+        },
+        {
+          "label_id": 4,
+          "label_name": "Capsule",
+          "count": 0
+        },
+        {
+          "label_id": 5,
+          "label_name": "Torus",
+          "count": 0
+        },
+        {
+          "label_id": 6,
+          "label_name": "Cube",
+          "count": 0
+        },
+        {
+          "label_id": 7,
+          "label_name": "Sphere",
+          "count": 0
+        },
+        {
+          "label_id": 8,
+          "label_name": "Prism",
+          "count": 1
+        },
+        {
+          "label_id": 9,
+          "label_name": "Arch",
+          "count": 0
+        },
+        {
+          "label_id": 10,
+          "label_name": "Circular_container",
+          "count": 0
+        },
+        {
+          "label_id": 11,
+          "label_name": "Octagonal_pipe",
+          "count": 0
+        },
+        {
+          "label_id": 12,
+          "label_name": "Square_container",
+          "count": 0
+        },
+        {
+          "label_id": 13,
+          "label_name": "Torus_container",
+          "count": 0
+        }
+      ]
+    }
+  ]
+}
