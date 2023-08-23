@@ -1,0 +1,1 @@
+contains code for loading stupd (and clevr) datasets for the various baseline models used in this paper's experiments. 
