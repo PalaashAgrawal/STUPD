@@ -33,7 +33,7 @@ class languageOnlyDataset(baseData):
         self.predicates = [] #y
 
 
-        self.classes = list(set(vidvrd_to_stupd.values()))
+        sorted(list(set(vidvrd_to_stupd.values())))
         self.class2idx = {cat:i for i,cat in enumerate(self.classes)}
         self.idx2class = {self.class2idx[cat]:cat for cat in self.class2idx}
         self.c = len(self.classes)

@@ -23,7 +23,7 @@ class coordinate2D_OnlyDataset(baseData):
         self.split = split
         if self.split is not None: assert split in ['train', 'valid', 'test'], f"invalid selection of split. expected values = 'train', 'valid', 'test'"
         
-        self.classes = list(set(spatialsenses_to_stupd.values()))
+        self.classes = sorted(list(set(spatialsenses_to_stupd.values())))
         self.class2idx = {cat:i for i,cat in enumerate(self.classes)}
         self.idx2class = {self.class2idx[cat]:cat for cat in self.class2idx}
         self.c = len(self.classes)
