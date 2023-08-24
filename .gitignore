@@ -6,7 +6,7 @@ wandb/
 
 *.bin.gz
 
-*pkl.pth
+*.pth
 
 *.out
 
