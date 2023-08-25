@@ -1,10 +1,11 @@
 #____________________________________________WANDB info__________________________________________
 #edit these
-project = 'SpatialSense from scratch'
-name = 'vipcnn-scratch'
+project = 'SpatialSense_scratch_STUPDpretrained'
+name = 'vipcnn-scratch-STUPDpretrained'
 model_name = "vipcnn"
 dataset_name = 'SpatialSense'
-#___________________________________________GPU info_____________________________________________
+
+#_____________GPU info_____________________________________________
 
 #Note that the optional GPU id argument given to python from command line, will override this variable
 
@@ -25,6 +26,7 @@ from fastai.distributed import *
 from fastai.vision.all import *
 import wandb
 from fastai.callback.wandb import *
+
 import os
 import sys
 
@@ -35,16 +37,46 @@ device = torch.device('cpu') if not torch.cuda.is_available() else torch.device(
 
 wandb.init(project = project , name = name)
 
-module_path = os.path.abspath(os.path.join('../../../baselines'))
-if module_path not in sys.path: sys.path.append(module_path)
+module_path = core_pth/'experiments/baselines'; assert module_path.exists()
+if module_path not in sys.path: sys.path.append(str(module_path))
 
 
-from dataloaders.spatialsense.vipcnnDataset import vipcnnDataset
-from dataloaders.spatialsense.utils import  map_spatialsenses_to_stupd
+
+
+
+from pretraining_dataloaders.stupd.spatialsense.vipcnnDataset import vipcnnDataset
+from pretraining_dataloaders.stupd.spatialsense.utils import split_dataset
 from models.static.vipcnn import VipCNN
 import torchvision.transforms as transforms
 
+
+ds = vipcnnDataset(annotations_path = stupd_path/'annotations', 
+                   image_path = stupd_path/'stupd',
+                    x_tfms =      [transforms.ToPILImage("RGB"),
+                                   transforms.ColorJitter(0.1, 0.1, 0.1, 0.05),
+                                  ],
+                        )
+
+train_ds, valid_ds = split_dataset(ds, pct = 0.8)
+
+train_dl = DataLoader(train_ds, batch_size =64 , shuffle = True, drop_last = True)
+valid_dl = DataLoader(valid_ds, batch_size = 128 , shuffle = True, drop_last = True)
+
+dls = DataLoaders(train_dl, valid_dl)
+model = VipCNN(roi_size = 6, num_classes = train_ds.c, imagenet_pretrained = False).cuda()
+
+learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],
+               path = core_pth/'experiments/baselines/weights',
+               model_dir = model_name,
+               )
+
+learn.fit_one_cycle(2)
+learn.save(name)
+
 #___________________________________________code _________________________________________________
+
+from dataloaders.spatialsense.vipcnnDataset import vipcnnDataset
+from dataloaders.spatialsense.utils import  map_spatialsenses_to_stupd
 
 train_ds = vipcnnDataset(annotations_path = spatialsenses_pth/'annotations.json',
                          image_path = spatialsenses_pth/'images',
@@ -61,8 +93,8 @@ valid_ds = vipcnnDataset(annotations_path = spatialsenses_pth/'annotations.json'
                          x_tfms = [transforms.ToPILImage("RGB")],
                          y_category_tfms = [map_spatialsenses_to_stupd])
 
-train_dl = DataLoader(train_ds, batch_size =32 , shuffle = True)
-valid_dl = DataLoader(valid_ds, batch_size = 64 , shuffle = True)
+train_dl = DataLoader(train_ds, batch_size =64 , shuffle = True)
+valid_dl = DataLoader(valid_ds, batch_size = 128 , shuffle = True)
 
 dls = DataLoaders(train_dl, valid_dl)
 dls.n_inp = 3

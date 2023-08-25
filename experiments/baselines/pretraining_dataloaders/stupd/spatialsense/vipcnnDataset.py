@@ -1,5 +1,6 @@
 import torch
-from .utils import spatialsenses_to_stupd, read_img
+from .utils import read_img, stupd_classes, convert_stupdBbox_to_spatialSenseBbox
+
 from .baseData import baseData
 import json
 import torchvision.transforms as transforms
@@ -8,13 +9,17 @@ from pathlib import Path
 from PIL import Image
 import numpy as np
 import math
+import pandas as pd
+
+
+def noop(x): return x
+
 
 
 class vipcnnDataset(baseData):
     def __init__(self,
                 annotations_path, 
                 image_path ,
-                split=None, 
                 x_tfms: list = None, 
                 y_category_tfms: list = None):
 
@@ -38,10 +43,7 @@ class vipcnnDataset(baseData):
         self.image_fnames = []
         
         
-        self.split = split
-        if self.split is not None: assert split in ['train', 'valid', 'test'], f"invalid selection of split. expected values = 'train', 'valid', 'test'"
-        
-        self.classes = list(set(spatialsenses_to_stupd.values()))
+        self.classes = sorted(stupd_classes)
         self.class2idx = {cat:i for i,cat in enumerate(self.classes)}
         self.idx2class = {self.class2idx[cat]:cat for cat in self.class2idx}
         self.c = len(self.classes)
@@ -49,23 +51,30 @@ class vipcnnDataset(baseData):
         #transforms
         self.x_tfms = list(x_tfms or [noop]) + [transforms.ToTensor()]
         self.y_category_tfms = list(y_category_tfms or [noop]) + [lambda y: self.class2idx[y]]
- 
-        
-        #enumerating all raw data objects
-        for relations in json.load(open(annotations_path)):
-            if self.split and not relations["split"] == split: continue
-            for relation in relations['annotations']:
-                if not relation['label']: continue
-                # self.subjects.append(relation['subject']['name'])
-                # self.objects.append(relation['object']['name'])
-                self.predicates.append(relation['predicate'])
-                
-                self.subj_bbox.append(relation['subject']['bbox'])
-                self.obj_bbox.append(relation['object']['bbox'])
-                
-                self.image_fnames.append(read_img(relations['url'], image_path))
-                
+
+
+        assert Path(annotations_path).exists()
+        annotation_files = [o for o in annotations_path.iterdir() if str(o).endswith('csv') and o.stem in self.classes]
+
+        for annotation in annotation_files:
+            relations = pd.read_csv(annotation).dropna() #any row with incomplete data is dropped
+
+            for k,row in relations.iterrows():
+
+                self.predicates.append(row['relation'])
+                # self.subjects.append(f"{row['subject_category']} {row['subject_supercategory']}")
+                # self.objects.append(f"{row['object_category']} {row['object_supercategory']}")
+
+                subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[0], eval(row['object_bbox2d'])[0]
+                self.subj_bbox.append(list(convert_stupdBbox_to_spatialSenseBbox(subj_bbox)))
+                self.obj_bbox.append(list(convert_stupdBbox_to_spatialSenseBbox(obj_bbox)))
+
+                self.image_fnames.append(Path(image_path)/f"{eval(row['image_path'])[0]}")
+
+        #misc
         self.model = 'vipcnn'
+        self.img2tsr = transforms.ToTensor()
+        self.tsr2img = transforms.ToPILImage()
 
     def __len__(self): return len(self.predicates)
 

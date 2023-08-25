@@ -44,10 +44,9 @@ class languageOnlyDataset(baseData):
         annotation_files = [o for o in annotations_path.iterdir() if str(o).endswith('csv') and o.stem in self.classes]
         
         for annotation in annotation_files:
-            relations = pd.read_csv(annotation)
+            relations = pd.read_csv(annotation).dropna()
             for k,row in relations.iterrows():
-                #some rows have errors and are empty. Eg if an  object is outside of the Unity Field of View. So we skip them
-                if not len(row['subject_category']) or not len(row['object_category']): continue
+               
 
                 self.predicates.append(row['relation'])
                 self.subjects.append(f"{row['subject_category']} {row['subject_supercategory']}")

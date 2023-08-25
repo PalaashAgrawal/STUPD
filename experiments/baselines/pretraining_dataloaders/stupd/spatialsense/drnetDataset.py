@@ -60,20 +60,7 @@ class drnetDataset(baseData):
         self.y_category_tfms = list(y_category_tfms or [noop]) + [lambda y: self.class2idx[y]]
         self.x_img_tfms = list(x_img_tfms or [noop]) + [transforms.ToTensor()]
         self.bbox_mask_tfms = list(bbox_mask_tfms or [noop]) + [transforms.ToTensor()]
-        
-        # #enumerating all raw data objects
-        # for relations in json.load(open(annotations_path)):
-        #     if self.split and not relations["split"] == split: continue
-        #     for relation in relations['annotations']:
-        #         if not relation['label']: continue
-        #         self.subjects.append(relation['subject']['name'])
-        #         self.objects.append(relation['object']['name'])
-        #         self.predicates.append(relation['predicate'])
-                
-        #         self.subj_bbox.append(relation['subject']['bbox'])
-        #         self.obj_bbox.append(relation['object']['bbox'])
-                
-        #         self.image_fnames.append(read_img(relations['url'], image_path))
+
 
         assert Path(annotations_path).exists()
         annotation_files = [o for o in annotations_path.iterdir() if str(o).endswith('csv') and o.stem in self.classes]
@@ -83,12 +70,10 @@ class drnetDataset(baseData):
 
             for k,row in relations.iterrows():
 
-
                 self.predicates.append(row['relation'])
                 self.subjects.append(f"{row['subject_category']} {row['subject_supercategory']}")
                 self.objects.append(f"{row['object_category']} {row['object_supercategory']}")
 
-                
                 subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[0], eval(row['object_bbox2d'])[0]
                 self.subj_bbox.append(list(convert_stupdBbox_to_spatialSenseBbox(subj_bbox)))
                 self.obj_bbox.append(list(convert_stupdBbox_to_spatialSenseBbox(obj_bbox)))

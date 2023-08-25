@@ -28,6 +28,8 @@ from fastai.callback.wandb import *
 import os
 import sys
 
+module_path = core_pth/'experiments/baselines'; assert module_path.exists()
+if module_path not in sys.path: sys.path.append(str(module_path))
 
 device_id = device_id if len(sys.argv)<2 else sys.argv[1]
 print(f'cuda:{device_id}')
@@ -35,9 +37,6 @@ os.environ['CUDA_VISIBLE_DEVICES'] = str(device_id)
 device = torch.device('cpu') if not torch.cuda.is_available() else torch.device(f'cuda:{device_id}')
 
 wandb.init(project = project , name = name)
-
-module_path = os.path.abspath(os.path.join('../../../baselines'))
-if module_path not in sys.path: sys.path.append(module_path)
 
 
 from dataloaders.spatialsense.vtranseDataset import vtranseDataset
