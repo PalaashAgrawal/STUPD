@@ -16,10 +16,11 @@ device_id = 0 #cuda ID for the GPU, if it exists. If you dont have GPU, ignore t
 from pathlib import Path
 
 #edit. Expected structure: core_path contains dataset path as well as the code for the experiments. 
-core_pth = Path('/home/user/prepositions'); assert core_pth.exists() 
+core_pth = Path('/home/agrawalp2/prepositions'); assert core_pth.exists() 
 spatialsenses_pth = core_pth/Path('real_world_data/spatialsense'); assert spatialsenses_pth.exists()
 encoder_path = core_pth/Path('experiments/baselines/models/encoder/GoogleNews-vectors-negative300.bin.gz'); assert encoder_path.exists()
-stupd_path = core_pth/'stupd_backup/stupd_dataset'; assert stupd_path.exists()
+
+stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
 
 #___________________________________________run _________________________________________________
 import torch
