@@ -1,7 +1,7 @@
 
 #____________________________________________WANDB info__________________________________________
 #edit these
-project = 'VidVRD from scratch'
+project = 'VidVRD pretrained'
 name = 'language-only'
 model_name = "custom language based"
 dataset_name = 'ViDVRD'

@@ -1,6 +1,6 @@
 #____________________________________________WANDB info__________________________________________
 #edit these
-project = 'VidVRD from scratch'
+project = 'VidVRD pretrained'
 name = 'vipcnn'
 model_name = "vipcnn"
 dataset_name = 'ViDVRD'

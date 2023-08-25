@@ -3,7 +3,7 @@
 #____________________________________________WANDB info__________________________________________
 
 #edit these
-project = 'VidVRD from scratch'
+project = 'VidVRD pretrained'
 name = 'coordinate-only'
 model_name = "custom language based"
 dataset_name = 'ViDVRD'

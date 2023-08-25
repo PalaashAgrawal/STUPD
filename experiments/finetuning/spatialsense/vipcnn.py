@@ -68,7 +68,9 @@ dls = DataLoaders(train_dl, valid_dl)
 dls.n_inp = 3
 
 model = VipCNN(roi_size = 6, num_classes = train_ds.c, imagenet_pretrained = False).cuda()
-learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],  
+learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],
+                path = core_pth/'experiments/baselines/weights',
+                model_dir = model_name,  
                 cbs = WandbCallback (model_name = model_name , dataset_name = dataset_name))
 
 learn.fit(5)

@@ -77,6 +77,7 @@ class pprfcnDataset(baseData):
         
         #for computer vision part of the model
         img = Image.open(self.image_fnames[i])
+        img = self.tsr2img(self.img2tsr(img)[:3])#unity saves images as RGBA images. We convert it to RGB
         ih, iw = img.shape
             
         image = self.apply_tfms(self._getAppr(img, [0, ih, 0, iw]), self.x_tfms)
