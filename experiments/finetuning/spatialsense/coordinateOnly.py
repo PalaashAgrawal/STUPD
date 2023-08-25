@@ -34,8 +34,7 @@ from fastai.callback.wandb import *
 import os
 import sys
 
-module_path = core_pth/'experiments/baselines'; assert module_path.exists()
-if module_path not in sys.path: sys.path.append(str(module_path))
+
 
 device_id = device_id if len(sys.argv)<2 else sys.argv[1]
 os.environ['CUDA_VISIBLE_DEVICES'] = str(device_id)

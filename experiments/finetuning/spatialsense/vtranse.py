@@ -1,7 +1,7 @@
 #____________________________________________WANDB info__________________________________________
 #edit these
-project = 'SpatialSense from scratch'
-name = 'vtranse-scratch'
+project = 'SpatialSense_scratch_STUPDpretrained'
+name = 'vtranse-scratch-STUPDpretrained'
 model_name = "vtranse"
 dataset_name = 'SpatialSense'
 #___________________________________________GPU info_____________________________________________
@@ -38,14 +38,50 @@ device = torch.device('cpu') if not torch.cuda.is_available() else torch.device(
 
 wandb.init(project = project , name = name)
 
+#___________________________________________code _________________________________________________
 
+from pretraining_dataloaders.stupd.spatialsense.vtranseDataset import vtranseDataset
+from pretraining_dataloaders.stupd.spatialsense.utils import split_dataset
+from models.static.vtranse import VtransE
+import torchvision.transforms as transforms
+
+
+ds = vtranseDataset(annotations_path = stupd_path/'annotations', 
+                   image_path = stupd_path/'stupd',
+                   encoder_path = encoder_path,
+
+                    x_tfms =      [transforms.ToPILImage("RGB"),
+                                   transforms.ColorJitter(0.1, 0.1, 0.1, 0.05),
+                                  ],
+                        )
+
+train_ds, valid_ds = split_dataset(ds, pct = 0.8)
+
+train_dl = DataLoader(train_ds, batch_size =64 , shuffle = True, drop_last = True)
+valid_dl = DataLoader(valid_ds, batch_size = 128 , shuffle = True, drop_last = True)
+
+dls = DataLoaders(train_dl, valid_dl)
+dls.n_inp = 7
+
+model = VtransE(word_embedding_dim = 300, num_classes = train_ds.c, imagenet_pretrained = False).cuda()
+
+learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],
+               path = core_pth/'experiments/baselines/weights',
+               model_dir = model_name,
+               )
+
+learn.fit_one_cycle(2)
+learn.save(name)
+
+
+
+#___________________________________________________part 2 finetuning______________________________
 from dataloaders.spatialsense.vtranseDataset import vtranseDataset
 from dataloaders.spatialsense.utils import  map_spatialsenses_to_stupd
 from models.static.vtranse import VtransE
 import torchvision.transforms as transforms
 
 
-#___________________________________________code _________________________________________________
 
 train_ds = vtranseDataset(annotations_path = spatialsenses_pth/'annotations.json',
                          image_path = spatialsenses_pth/'images',
@@ -78,5 +114,7 @@ learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics 
                 model_dir = model_name,  
                 cbs = WandbCallback (model_name = model_name , dataset_name = dataset_name),
 )
+
+learn.load(name, device = device)
 
 learn.fit(5)

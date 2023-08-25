@@ -68,6 +68,8 @@ train_dl = DataLoader(train_ds, batch_size =64 , shuffle = True, drop_last = Tru
 valid_dl = DataLoader(valid_ds, batch_size = 128 , shuffle = True, drop_last = True)
 
 dls = DataLoaders(train_dl, valid_dl)
+dls.n_inp = 4
+
 model = DRNet(word_embedding_dim = 300, 
               feature_dim = 512, 
               num_classes = train_ds.c, 
