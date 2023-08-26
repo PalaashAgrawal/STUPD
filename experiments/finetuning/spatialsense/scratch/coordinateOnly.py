@@ -23,7 +23,6 @@ spatialsenses_pth = core_pth/Path('real_world_data/spatialsense'); assert spatia
 encoder_path = core_pth/Path('experiments/baselines/models/encoder/GoogleNews-vectors-negative300.bin.gz'); assert encoder_path.exists()
 stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
 
-stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
 
 #___________________________________________run _________________________________________________
 import torch

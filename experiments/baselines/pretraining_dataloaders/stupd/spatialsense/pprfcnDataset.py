@@ -64,7 +64,12 @@ class pprfcnDataset(baseData):
 
                 self.image_fnames.append(Path(image_path)/f"{eval(row['image_path'])[0]}")
                 
+        
+         #misc
         self.model = 'pprfcn'
+        self.img2tsr = transforms.ToTensor()
+        self.tsr2img = transforms.ToPILImage()
+
 
     def __len__(self): return len(self.predicates)
 

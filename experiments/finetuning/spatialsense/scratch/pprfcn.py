@@ -48,7 +48,7 @@ if module_path not in sys.path: sys.path.append(str(module_path))
 from pretraining_dataloaders.stupd.spatialsense.pprfcnDataset import pprfcnDataset
 from pretraining_dataloaders.stupd.spatialsense.utils import split_dataset
 
-from models.static.vipcnn import VipCNN
+from models.static.pprfcn import PPRFCN
 import torchvision.transforms as transforms
 
 
