@@ -1,0 +1,1 @@
+dataloaders to train models on all of STUPD dataset. The models follow a similar structure to VidVRD based training.

@@ -112,8 +112,6 @@ class coordinate2D_OnlyDataset(baseData):
                         subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[frame%end_frame], eval(row['object_bbox2d'])[frame%end_frame]
                         subj_position, obj_position = eval(row['subject_position3d'])[frame%end_frame], eval(row['object_position3d'])[frame%end_frame]
 
-
-
                     coords.extend([subj_position['x']-obj_position['x'],
                                     subj_position['y']-obj_position['y'],
                                     *convert_stupdBbox_to_spatialSenseBbox(subj_bbox),

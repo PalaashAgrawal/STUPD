@@ -1,6 +1,6 @@
 #____________________________________________WANDB info__________________________________________
 #edit these
-project = 'VidVRDscratch_stupdPretrained'
+project = 'directly on STUPD'
 name = 'pprfcn'
 model_name = "pprfcn"
 dataset_name = 'ViDVRD'
@@ -17,8 +17,7 @@ from pathlib import Path
 core_pth = Path('/home/user/prepositions'); assert core_pth.exists()
 vidvrd_path = core_pth/Path('real_world_data/vidvrd/vidvrd-dataset'); assert vidvrd_path.exists()
 encoder_path = core_pth/Path('experiments/baselines/models/encoder/GoogleNews-vectors-negative300.bin.gz'); assert encoder_path.exists()
-# stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
-stupd_path = core_pth/'stupd_backup/stupd_dataset'
+stupd_path = core_pth/Path('stupd_backup/stupd_dataset'); assert stupd_path.exists()
 
 
 #___________________________________________num_frames____________________________________________
@@ -50,8 +49,8 @@ wandb.init(project = project , name = name)
 
 # ___________________________________STAGE 1: pretraining _________________________________________
 
-from pretraining_dataloaders.stupd.vidvrd.pprfcnDataset import pprfcnDataset
-from pretraining_dataloaders.stupd.vidvrd.utils import split_dataset
+from STUPD_dataloaders.pprfcnDataset import pprfcnDataset
+from STUPD_dataloaders.utils import split_dataset
 from models.dynamic.pprfcn import PPRFCN
 import torchvision.transforms as transforms
 
@@ -79,50 +78,50 @@ learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics 
                 cbs = WandbCallback (model_name = model_name , dataset_name = dataset_name))
 
 
-learn.fit_one_cycle(2)
-learn.save(name)
-# ___________________________________STAGE 2: FINETUNING on spatialsense___________________________________
+learn.fit_one_cycle(5)
+# learn.save(name)
+# # ___________________________________STAGE 2: FINETUNING on spatialsense___________________________________
 
 
 
-from dataloaders.vidvrd.pprfcnDataset import pprfcnDataset
-from dataloaders.vidvrd.utils import  map_vidvrd_to_stupd
+# from dataloaders.vidvrd.pprfcnDataset import pprfcnDataset
+# from dataloaders.vidvrd.utils import  map_vidvrd_to_stupd
 
 
-train_ds = pprfcnDataset(annotations_directory_path = vidvrd_path/'train',
-                        video_path = vidvrd_path/'videos',
-#                          split='train',
-                         n_frames = n_frames, 
-                         x_tfms = [transforms.ToPILImage("RGB"),
-                                   transforms.ColorJitter(0.1, 0.1, 0.1, 0.05),
-                                  ],
-                         y_category_tfms = [map_vidvrd_to_stupd],
-                        )
+# train_ds = pprfcnDataset(annotations_directory_path = vidvrd_path/'train',
+#                         video_path = vidvrd_path/'videos',
+# #                          split='train',
+#                          n_frames = n_frames, 
+#                          x_tfms = [transforms.ToPILImage("RGB"),
+#                                    transforms.ColorJitter(0.1, 0.1, 0.1, 0.05),
+#                                   ],
+#                          y_category_tfms = [map_vidvrd_to_stupd],
+#                         )
 
-valid_ds = pprfcnDataset(annotations_directory_path = vidvrd_path/'test',
-                        video_path = vidvrd_path/'videos',
-#                          split='train',
-                         n_frames = n_frames,
-                         x_tfms = [transforms.ToPILImage("RGB")],
-                         y_category_tfms = [map_vidvrd_to_stupd])
-
-
+# valid_ds = pprfcnDataset(annotations_directory_path = vidvrd_path/'test',
+#                         video_path = vidvrd_path/'videos',
+# #                          split='train',
+#                          n_frames = n_frames,
+#                          x_tfms = [transforms.ToPILImage("RGB")],
+#                          y_category_tfms = [map_vidvrd_to_stupd])
 
 
-train_dl = DataLoader(train_ds, batch_size =16 , shuffle = True, num_workers = 0)
-valid_dl = DataLoader(valid_ds, batch_size = 32, shuffle = True, num_workers = 0)
 
 
-dls = DataLoaders(train_dl, valid_dl)
-dls.n_inp = 3
-
-model = PPRFCN(train_ds.c, pretrained = False).cuda()
-
-learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],
-                path = core_pth/'experiments/baselines/weights',
-                model_dir = model_name,
-                cbs = WandbCallback (model_name = model_name , dataset_name = dataset_name))
+# train_dl = DataLoader(train_ds, batch_size =16 , shuffle = True, num_workers = 0)
+# valid_dl = DataLoader(valid_ds, batch_size = 32, shuffle = True, num_workers = 0)
 
 
-learn.load(name, device = device)
-learn.fit(5)
+# dls = DataLoaders(train_dl, valid_dl)
+# dls.n_inp = 3
+
+# model = PPRFCN(train_ds.c, pretrained = False).cuda()
+
+# learn = Learner(dls, model = model, loss_func = CrossEntropyLossFlat(), metrics = [accuracy,BalancedAccuracy()],
+#                 path = core_pth/'experiments/baselines/weights',
+#                 model_dir = model_name,
+#                 cbs = WandbCallback (model_name = model_name , dataset_name = dataset_name))
+
+
+# learn.load(name, device = device)
+# learn.fit(5)

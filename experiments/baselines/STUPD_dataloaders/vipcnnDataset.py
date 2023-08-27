@@ -58,6 +58,53 @@ class vipcnnDataset(baseData):
         self.y_category_tfms = list(y_category_tfms or [noop]) + [lambda y: self.class2idx[y]]
 
 
+        # files = [f for f in Path(annotations_directory_path).iterdir() if str(f).endswith('json')]
+
+ 
+        # for annotations_path in files:
+        #     annotations = json.load(open(annotations_path))
+        #     id2obj = self._obj_id2obj(annotations)
+
+        #     for relation in annotations["relation_instances"]:
+        #         predicate = self._get_valid_predicate(relation["predicate"], vidvrd_to_stupd)
+        #         if predicate is None: continue
+        #         self.predicates.append(predicate)
+        #         # self.subjects.append(id2obj[relation["subject_tid"]])
+        #         # self.objects.append(id2obj[relation["object_tid"]])
+
+
+        #         start_frame, end_frame = relation["begin_fid"], relation["end_fid"]
+        #         frames = [min(f,len(annotations["trajectories"])-1) for f in  self._sample_frames(start_frame, end_frame, self.n_frames)]
+
+
+        #         self.vid_fnames.append(Path(video_path)/f'{annotations["video_id"]}.mp4')
+        #         self.vid_info.append({'fps': annotations["fps"], 'frames': frames})
+
+        #         subj_id, obj_id = relation["subject_tid"], relation["object_tid"]
+                
+        #         bbox_s, bbox_o = [],[]
+        #         for frame in frames: 
+
+        #             trajectory = annotations["trajectories"][frame]
+                    
+        #             subj_bbox, obj_bbox = [0]*4, [0]*4
+
+        #             for t in trajectory: 
+        #                 # if t["tid"]==subj_id: subj_bbox = t["bbox"]["ymin"]/annotations["height"], t["bbox"]["ymax"]/annotations["height"], t["bbox"]["xmin"]/annotations["width"], t["bbox"]["xmax"]/annotations["width"]
+        #                 # if t["tid"]==obj_id: obj_bbox = t["bbox"]["ymin"]/annotations["height"], t["bbox"]["ymax"]/annotations["height"], t["bbox"]["xmin"]/annotations["width"], t["bbox"]["xmax"]/annotations["width"]
+                    
+
+        #                 if t["tid"]==subj_id: subj_bbox = [ t["bbox"]["ymin"], t["bbox"]["ymax"], t["bbox"]["xmin"], t["bbox"]["xmax"] ]
+        #                 if t["tid"]==obj_id: obj_bbox = [ t["bbox"]["ymin"], t["bbox"]["ymax"], t["bbox"]["xmin"], t["bbox"]["xmax"] ]
+
+
+        #             bbox_s.append(subj_bbox)
+        #             bbox_o.append(obj_bbox)
+
+
+        #         self.subj_bbox.append(bbox_s)
+        #         self.obj_bbox.append(bbox_o)
+
         assert Path(annotations_path).exists()
         annotation_files = [o for o in annotations_path.iterdir() if str(o).endswith('csv') and o.stem in self.classes]
 
@@ -80,7 +127,13 @@ class vipcnnDataset(baseData):
                     while not subj_bbox or not obj_bbox: #some are None values. 
                         frame+=1
                         subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[frame%end_frame], eval(row['object_bbox2d'])[frame%end_frame]
-         
+                    # subj_position, obj_position = eval(row['subject_position3d'])[frame], eval(row['object_position3d'])[frame]
+
+                    # coords.append([subj_position['x']-obj_position['x'],
+                    #                 subj_position['y']-obj_position['y'],
+                    #                 *convert_stupdBbox_to_spatialSenseBbox(subj_bbox),
+                    #                 *convert_stupdBbox_to_spatialSenseBbox(obj_bbox),
+                    #                 ])
                     bbox_s.append(convert_stupdBbox_to_spatialSenseBbox(subj_bbox))
                     bbox_o.append(convert_stupdBbox_to_spatialSenseBbox(obj_bbox))
 

@@ -46,6 +46,20 @@ class languageOnlyDataset(baseData):
         
 
 
+        # assert Path(annotations_directory_path).exists()
+        # files = [f for f in Path(annotations_directory_path).iterdir() if str(f).endswith('json')]
+
+        # for annotations_path in files:
+        #     annotations = json.load(open(annotations_path))
+        #     id2obj = self._obj_id2obj(annotations)
+        #     for relation in annotations["relation_instances"]:
+        #         predicate = self._get_valid_predicate(relation["predicate"], vidvrd_to_stupd)
+        #         if predicate is None: continue
+
+        #         self.predicates.append(predicate)
+        #         self.subjects.append(id2obj[relation["subject_tid"]])
+        #         self.objects.append(id2obj[relation["object_tid"]])
+        
         
         assert Path(annotations_path).exists()
         annotation_files = [o for o in annotations_path.iterdir() if str(o).endswith('csv') and o.stem in self.classes]
