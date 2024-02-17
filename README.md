@@ -22,7 +22,8 @@ The entire dataset will be available soon.
 ## Generating the dataset
 If you are interested in generating the dataset yourself, rather than using the dataset we provide, we provide all the UNITY configuration scripts for anyone to generate the (spatial)-STUPD dataset. There are many reasons why you would want to generate the dataset on your local UNITY setup. You can customize the logic, add in more configurations possibilities (more skins, backgrounds and objects), and also extract different types of meta-data.
 
-
+## Running experiments and recreating baselines
+In  `experiments`, we provide pytorch-based scripts to run baselines that are reported in the paper. 
 
 
 ## Bibtex
