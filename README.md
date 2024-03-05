@@ -14,9 +14,11 @@ STUPD (Spatial and Temporal Understanding of Prepositions Dataset) is a syntheti
 
 
 ## How to access the dataset?
-Currently, the STUPD dataset is not publically accessible (awaiting reviews). But you can view 50 examples from each category in [this google drive link](https://drive.google.com/drive/folders/178Gctqf-6kExJ6nfjdZGT_W_uW99vNEz?usp=sharing). 
 
-The entire dataset will be available soon. 
+The STUPD dataset is available in the form of zip files in  [this google drive link](https://drive.google.com/drive/folders/178Gctqf-6kExJ6nfjdZGT_W_uW99vNEz?usp=sharing). The total size of the dataset is 959 GB. For convenience, the dataset has been divided into multiple zip files, each not exceeding 3GB. 
+
+For reviewers, and to get a quick sense of the STUPD dataset, you can view 50 examples from each category in [this google drive link](https://drive.google.com/drive/folders/178Gctqf-6kExJ6nfjdZGT_W_uW99vNEz?usp=sharing). 
+
 
 
 ## Generating the dataset
