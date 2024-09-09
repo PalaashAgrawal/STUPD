@@ -139,7 +139,7 @@ class drnetDataset(baseData):
                     subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[frame], eval(row['object_bbox2d'])[frame]
                     while not subj_bbox or not obj_bbox: #some are None values. 
                         frame+=1
-                        subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[frame%end_frame], eval(row['object_bbox2d'])[frame%end_frame]
+                        subj_bbox, obj_bbox = eval(row['subject_bbox2d'])[frame], eval(row['object_bbox2d'])[frame]
                     # subj_position, obj_position = eval(row['subject_position3d'])[frame], eval(row['object_position3d'])[frame]
 
                     # coords.append([subj_position['x']-obj_position['x'],

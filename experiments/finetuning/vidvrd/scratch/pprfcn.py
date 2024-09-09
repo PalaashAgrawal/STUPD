@@ -14,11 +14,10 @@ device_id = 0 #cuda ID for the GPU, if it exists. If you dont have GPU, ignore t
 from pathlib import Path
 
 #edit. Expected structure: core_path contains dataset path as well as the code for the experiments. 
-core_pth = Path('/home/user/prepositions'); assert core_pth.exists()
+core_pth = Path('/home/agrawalp2/prepositions'); assert core_pth.exists()
 vidvrd_path = core_pth/Path('real_world_data/vidvrd/vidvrd-dataset'); assert vidvrd_path.exists()
 encoder_path = core_pth/Path('experiments/baselines/models/encoder/GoogleNews-vectors-negative300.bin.gz'); assert encoder_path.exists()
-# stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
-stupd_path = core_pth/'stupd_backup/stupd_dataset'
+stupd_path = Path('/data/dataset/agrawalp2/stupd/stupd_dataset'); assert stupd_path.exists()
 
 
 #___________________________________________num_frames____________________________________________
@@ -110,7 +109,7 @@ valid_ds = pprfcnDataset(annotations_directory_path = vidvrd_path/'test',
 
 
 train_dl = DataLoader(train_ds, batch_size =16 , shuffle = True, num_workers = 0)
-valid_dl = DataLoader(valid_ds, batch_size = 32, shuffle = True, num_workers = 0)
+valid_dl = DataLoader(valid_ds, batch_size = 32 , shuffle = True, num_workers = 0)
 
 
 dls = DataLoaders(train_dl, valid_dl)
